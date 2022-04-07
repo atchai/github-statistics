@@ -3,6 +3,7 @@
   "homepage": "https://vesoft-inc.github.io/github-statistics",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@material-ui/core": "^4.11.4",
     "antd": "^3.26.20",

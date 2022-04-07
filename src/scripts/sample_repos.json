@@ -1,0 +1,15 @@
+[
+    "ava-labs/avalanchejs",
+    "CosmWasm/cosmwasm",
+    "cosmos/cosmos-sdk",
+    "terra-money/terra.js",
+    "solana-labs/solana-web3.js",
+    "ethers-io/ethers.js",
+    "ChainSafe/web3.js",
+    "OpenZeppelin/openzeppelin-contracts",
+    "ethereum/web3.py",
+    "trufflesuite/ganache",
+    "trufflesuite/truffle",
+    "NomicFoundation/hardhat",
+    "eth-brownie/brownie"
+]

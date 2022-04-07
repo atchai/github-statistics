@@ -3,6 +3,14 @@ import { GraphQLClient } from 'graphql-request'
 
 const getProgress = (c, t) => t === 0 ? 100 : Math.floor(c / t * 100)
 
+const universalAtob = b64Encoded => {
+  try {
+    return window.atob(b64Encoded);
+  } catch (err) {
+    return Buffer.from(b64Encoded, 'base64').toString();
+  }
+};
+
 class GithubFetcher {
 
   constructor(token) {
@@ -12,7 +20,7 @@ class GithubFetcher {
       endpoint,
       {
         headers: {
-          Authorization: 'bearer ' + window.atob(token),
+          Authorization: 'bearer ' + universalAtob(token),
         }
       }
     )
