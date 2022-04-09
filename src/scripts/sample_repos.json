@@ -1,15 +1,67 @@
 [
-    "ava-labs/avalanchejs",
-    "CosmWasm/cosmwasm",
-    "cosmos/cosmos-sdk",
-    "terra-money/terra.js",
-    "solana-labs/solana-web3.js",
-    "ethers-io/ethers.js",
-    "ChainSafe/web3.js",
-    "OpenZeppelin/openzeppelin-contracts",
-    "ethereum/web3.py",
-    "trufflesuite/ganache",
-    "trufflesuite/truffle",
-    "NomicFoundation/hardhat",
-    "eth-brownie/brownie"
+    {
+      "url": "ava-labs/avalanchejs",
+      "eco": "avalanche",
+      "name": "avalanchejs"
+    },
+    {
+      "url": "CosmWasm/cosmwasm",
+      "eco": "cosmos",
+      "name": "cosmwasm"
+    },
+    {
+      "url": "cosmos/cosmos-sdk",
+      "eco": "cosmos",
+      "name": "cosmos-sdk"
+    },
+    {
+      "url": "terra-money/terra.js",
+      "eco": "terra",
+      "name": "terra.js"
+    },
+    {
+      "url": "solana-labs/solana-web3.js",
+      "eco": "solana",
+      "name": "solana-web3.js"
+    },
+    {
+      "url": "ethers-io/ethers.js",
+      "eco": "ethereum",
+      "name": "ethers.js"
+    },
+    {
+      "url": "ChainSafe/web3.js",
+      "eco": "ethereum",
+      "name": "web3.js"
+    },
+    {
+      "url": "OpenZeppelin/openzeppelin-contracts",
+      "eco": "ethereum",
+      "name": "openzeppelin-contracts"
+    },
+    {
+      "url": "ethereum/web3.py",
+      "eco": "ethereum",
+      "name": "web3.py"
+    },
+    {
+      "url": "trufflesuite/ganache",
+      "eco": "ethereum",
+      "name": "ganache"
+    },
+    {
+      "url": "trufflesuite/truffle",
+      "eco": "ethereum",
+      "name": "truffle"
+    },
+    {
+      "url": "NomicFoundation/hardhat",
+      "eco": "ethereum",
+      "name": "hardhat"
+    },
+    {
+      "url": "eth-brownie/brownie",
+      "eco": "ethereum",
+      "name": "brownie"
+    }
 ]

@@ -41,15 +41,15 @@ import { exit } from 'process';
 
     const ATTRIBUTE_COUNTS = Object.keys(ATTRIBUTES).length;
 
-    const stats = [['repo_name', 'date', ...Object.keys(ATTRIBUTES)].join(',')];
+    const stats = [['repo_name', 'eco', 'date', ...Object.keys(ATTRIBUTES)].join(',')];
 
     console.time('it took');
     for (const repo of repos) {
-        console.log('fetching stats of', repo);
-        const data = await Promise.all(Object.values(ATTRIBUTES).map(method => generateStats(repo, method)));
+        console.log('fetching stats of', repo.url);
+        const data = await Promise.all(Object.values(ATTRIBUTES).map(method => generateStats(repo.url, method)));
         const accumulators = Array.from({length: ATTRIBUTE_COUNTS}).fill(0);
         [...new Set(data.map(v => [...v.keys()]).flat())].sort((a, b) => a - b).forEach(v => {
-            const headers = [repo, formatDate(+v)];
+            const headers = [repo.url, repo.eco, formatDate(+v)];
             for (let i = 0; i < ATTRIBUTE_COUNTS; i++) {
                 accumulators[i] += data[i].get(v) || 0;
                 headers.push(accumulators[i]);
