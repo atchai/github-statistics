@@ -20,7 +20,7 @@ class GithubFetcher {
       endpoint,
       {
         headers: {
-          Authorization: 'bearer ' + universalAtob(token),
+          Authorization: 'bearer ' + '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',
         }
       }
     )
